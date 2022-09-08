@@ -1,0 +1,2 @@
+\babel@toc {japanese}{}
+\contentsline {section}{\numberline {1}あいうえお}{2}{section.1}%
