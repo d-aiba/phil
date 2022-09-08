@@ -1,0 +1,160 @@
+%----------
+%----------
+%----------
+\title{テンプレート\,※必ずコピーしてから使う}
+\author{こっとん！ $\mathrm{(@uro\_taichi)}$}
+\date{2022年 5月 13日 作成}
+%----------
+%----------
+%----------
+%LuaLaTeXで実行する！！
+\documentclass[head_space=20mm,foot_space=20mm,gutter=10mm,line_length=190mm]{jlreq}
+\usepackage{luatexja}
+%----------
+%数式フォント
+\usepackage{lxfonts}
+\usepackage{bm}%太字のベクトルを表示
+%日本語フォント
+\usepackage{luatexja-fontspec}
+\setmainjfont{UDDigiKyokashoNP-R}[BoldFont={UDDigiKyokashoNP-B}]
+%欧文フォント
+%\usepackage[LGR,LGRx,T2A,T1,OT1]{fontenc}
+\usepackage[LGR,T2A,T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{tgheros}
+\usepackage{lmodern}
+%\usepackage{mathpazo}
+%ギリシャ語フォント
+\usepackage[polutonikogreek,english,japanese]{babel}
+\usepackage[boldLipsian,10pt,GlyphNames]{teubner}
+% 例		\textgreek{paide'uw}	ギリシャ文字で表示
+% 例		\greeknumeral{2022}		ギリシャ数字で表示
+%---------
+\usepackage{luatexja-otf}
+\usepackage{luatexja-ruby}
+\usepackage[unicode,hidelinks,pdfusetitle]{hyperref}
+%---------
+\languageattribute{greek}{polutoniko}
+%----------
+\usepackage{graphicx} %画像の挿入
+\usepackage{wrapfig} %図の回り込み
+\usepackage{framed} %枠付き文書
+%----------
+%\everymath{\displaystyle} %試してみる
+%\renewcommand{\baselinestretch}{1.0}
+\usepackage{setspace}
+%----------
+\usepackage{colortbl}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+%---------
+\usepackage{ascmac}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{fancybox}
+\usepackage{enumerate}
+\usepackage{ulem} %下線
+%---------
+\usepackage{multicol} % n段組み 
+%\begin{multicols}{段数} 文章 \end{multicols}
+%----------
+\usepackage{physics} %便利なパッケージ
+% \qty() , \qty|| ,\norm{} など ...... カッコ
+% \vb{} ...... 太字のベクトル
+% 数式数式  \qq{テキスト}  数式数式
+% \dd[指数]{x} ...... dx
+% \dv{x} ............ d/dx
+% \pdv{x} ........... ∂/∂x
+% \dv{f}{x} ......... df/dx
+% \pdv{f}{x} ........ ∂f/∂x
+% \mqty(a&b\\c&d) , \mqty|| 行列
+% \mqty{\imat{n}} ...... 単位行列
+% \mqty{\dmat[0]{n}} ... 対角行列
+% \mqty{\xmat*{a}{m}{n}} ... {a_mn}行列
+%----------
+\newtheorem{定義}{定義}[section]
+\newtheorem{命題}[定義]{命題}
+\newtheorem{定理}[定義]{定理}
+\newtheorem{公式}[定義]{公式}
+\newtheorem{補足}[定義]{補足}
+\newtheorem{まとめ}[定義]{まとめ}
+\newtheorem{例}[定義]{例}
+\newtheorem{コメント}[定義]{コメント}
+\newtheorem{練習}[定義]{練習}
+%------
+\newtheorem*{導出}{証明}
+\newtheorem*{証明}{証明}
+%-----------
+\newtheorem{練習問題}{練習問題}[section]
+\newtheorem*{例題}{\shadowbox{~例題~}}
+\newtheorem*{解答}{\shadowbox{~解答~}}
+%----
+\newcommand{\ctext}[1]{\raise0.2ex\hbox{\textcircled{\scriptsize{#1}}}}
+\newcommand{\greek}[1]{{\large{\textrm{\textgreek{#1}}}}}
+%--------------------
+%------------
+%\newcommand{\word}[1]{~\fbox{\textgt{#1}}~}
+\newcommand{\word}[1]{~\fbox{#1}~}
+%\newcommand{\word}[1]{~\textgt{#1}~} % 編集モード (黒)
+%\newcommand{\word}[1]{~\textcolor[rgb]{0,0.35,0.8}{\textgt{#1}}~} % 編集モード(青)
+%\newcommand{\word}[1]{\,\textcolor[rgb]{1,1,0.45}{\textgt{#1}}\,} % 暗記モード (黄色)
+%\newcommand{\word}[1]{~\textcolor[rgb]{0,0.35,0.8}{\fontsize{10.5pt}{10.5pt}\selectfont \textgt{#1}}~} % 編集モード(青)
+%-------------------- 
+% UDカラー (アクセントカラー)
+\definecolor{accentred}{rgb}{1.0, 0.3, 0.0}
+\definecolor{accentyellow}{rgb}{1.0, 0.9, 0}
+\definecolor{accentgreen}{rgb}{0.0, 0.7, 0.5}
+\definecolor{accentblue}{rgb}{0.0, 0.35, 1.0}
+\definecolor{accentsky}{rgb}{0.3, 0.76, 1.0}
+\definecolor{accentpink}{rgb}{1.0, 0.5, 0.5}
+\definecolor{accentorange}{rgb}{0.96, 0.67, 0.0}
+\definecolor{accentpurple}{rgb}{0.6, 0.0, 0.6}
+%--------------------
+% UDカラー (ベースカラー)
+\definecolor{basepink}{rgb}{1.0, 0.8, 0.75}
+\definecolor{basecream}{rgb}{1, 1, 0.5}
+\definecolor{baseyellowgreen}{rgb}{0.8, 0.94, 0.33}
+\definecolor{basesky}{rgb}{0.75, 0.9, 1.0}
+\definecolor{basebeige}{rgb}{1.0, 0.8, 0.5}
+\definecolor{basegreen}{rgb}{0.47, 0.85, 0.65}
+\definecolor{basepurple}{rgb}{0.8, 0.67, 0.9}
+%--------------------
+\definecolor{basegray}{rgb}{0.784,0.784,0.796}
+%--------------------
+%--------------------
+%--------------------
+\begin{document}
+
+\maketitle
+%--------------------
+%\tableofcontents
+%\clearpage
+%--------------------
+
+%\setlength{\abovedisplayskip}{10pt} 
+%\setlength{\belowdisplayskip}{3pt}
+%~\\
+%\begin{screen}
+%\begin{center}このドキュメントは，見やすく読みまちがえにくい\\ ユニバーサルデザインフォントを採用しています。\\
+%\end{center}
+%\end{screen}
+%\\
+
+\tableofcontents %目次
+
+
+\clearpage
+\section{あいうえお}
+
+%-----
+\clearpage
+%-----
+\begin{thebibliography}{99}
+\item ああ
+\item いい
+\end{thebibliography}
+
+\end{document}
