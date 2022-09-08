@@ -1,3 +1,5 @@
 \babel@toc {japanese}{}
+\contentsline {part}{\numberline {第{\fontencoding {T1}\selectfont I}部}通史}{2}{part.1}%
 \contentsline {section}{\numberline {1}あいうえお}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}かきくけ}{2}{subsection.1.1}%
+\contentsline {part}{\numberline {第{\fontencoding {T1}\selectfont II}部}用語}{2}{part.2}%
