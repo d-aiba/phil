@@ -1,2 +1,3 @@
 \babel@toc {japanese}{}
 \contentsline {section}{\numberline {1}あいうえお}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}かきくけ}{2}{subsection.1.1}%
